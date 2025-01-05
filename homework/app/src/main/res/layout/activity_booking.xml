@@ -1,0 +1,116 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#2e2e2e">
+
+        <ImageView
+            android:id="@+id/imageCar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/vito" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023 Mercedes Vito"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✔ Available"
+                android:textColor="#00FF00"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$130/Day"
+                android:textColor="#00BFFF"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginTop="26dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Features"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                >
+
+                <TableRow>
+                    <TextView android:text="Year" android:textColor="#000000" />
+                    <TextView android:text="2023" android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Mileage" android:textColor="#000000" />
+                    <TextView android:text="2300" android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Manufacturer" android:textColor="#000000" />
+                    <TextView android:text="Mercedes" android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Seats" android:textColor="#000000" />
+                    <TextView android:text="9" android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Model" android:textColor="#000000" />
+                    <TextView android:text="Vito" android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Type" android:textColor="#000000" />
+                    <TextView android:text="Transporter" android:textColor="#000000" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/rentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start renting a car."
+            android:textSize="18dp">
+
+        </Button>
+
+    </LinearLayout>
+</ScrollView>
